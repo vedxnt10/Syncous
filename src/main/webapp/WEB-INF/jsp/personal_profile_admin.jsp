@@ -17,7 +17,7 @@
     String flat = (String) request.getAttribute("flat");
     String role = (String) request.getAttribute("role");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://syncous", "root", "root@123");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/syncous", "root", "root@123");
 
     PreparedStatement stmt = con.prepareStatement("SELECT * FROM USERDETAILS where scode=? and FLATNO=? and ROLE=? and USERNAME=?;");
     stmt.setString(1, sc);
@@ -44,7 +44,7 @@
 
         sname = rs.getString("SNAME");
         gender = rs.getString("GENDER");
-        martial = rs.getString("martial");
+        martial = rs.getString("marital");
         fname = rs.getString("fname");
         mname = rs.getString("mname");
         lname = rs.getString("lname");

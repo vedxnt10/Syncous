@@ -1,7 +1,7 @@
 
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%
+<%  
     String scc = (String) request.getAttribute("scode");
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/syncous", "root", "root@123");
