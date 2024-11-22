@@ -1,0 +1,76 @@
+Schema of tables 
+
+desc announcement;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| ID       | int          | YES  |     | NULL    |       |
+| USERNAME | varchar(50)  | YES  |     | NULL    |       |
+| SUBJECT  | varchar(50)  | YES  |     | NULL    |       |
+| MESSAGE  | varchar(200) | YES  |     | NULL    |       |
+| SCODE    | varchar(20)  | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+desc community;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| DESCRIBING | varchar(60) | YES  |     | NULL    |       |
+| AMOUNT     | int         | YES  |     | NULL    |       |
+| SCODE      | varchar(30) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc complaints;
++----------+----------------+------+-----+---------+-------+
+| Field    | Type           | Null | Key | Default | Extra |
++----------+----------------+------+-----+---------+-------+
+| scode    | int            | YES  |     | NULL    |       |
+| subject  | varchar(100)   | YES  |     | NULL    |       |
+| message  | varchar(10000) | YES  |     | NULL    |       |
+| username | varchar(200)   | YES  |     | NULL    |       |
+| flatno   | varchar(100)   | YES  |     | NULL    |       |
++----------+----------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+desc maintainance;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| GENERAL     | varchar(30) | YES  |     | NULL    |       |
+| WATER       | varchar(30) | YES  |     | NULL    |       |
+| MUNCIPAL    | varchar(30) | YES  |     | NULL    |       |
+| CLEAN       | varchar(30) | YES  |     | NULL    |       |
+| ELECTRICITY | varchar(30) | YES  |     | NULL    |       |
+| PARKING     | varchar(30) | YES  |     | NULL    |       |
+| LIFT        | varchar(30) | YES  |     | NULL    |       |
+| TOTAL       | int         | YES  |     | NULL    |       |
+| SCODE       | varchar(20) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+desc userdetails;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| ROLE     | varchar(20) | YES  |     | NULL    |       |
+| SNAME    | varchar(20) | YES  |     | NULL    |       |
+| ID       | int         | YES  |     | NULL    |       |
+| GENDER   | varchar(30) | YES  |     | NULL    |       |
+| MARITAL  | varchar(30) | YES  |     | NULL    |       |
+| FNAME    | varchar(30) | YES  |     | NULL    |       |
+| LNAME    | varchar(30) | YES  |     | NULL    |       |
+| DOB      | varchar(20) | YES  |     | NULL    |       |
+| AGE      | varchar(20) | YES  |     | NULL    |       |
+| CITY     | varchar(20) | YES  |     | NULL    |       |
+| DISTRICT | varchar(20) | YES  |     | NULL    |       |
+| STATE    | varchar(20) | YES  |     | NULL    |       |
+| PINCODE  | varchar(20) | YES  |     | NULL    |       |
+| USERNAME | varchar(30) | YES  |     | NULL    |       |
+| PASSWORD | varchar(30) | YES  |     | NULL    |       |
+| MNAME    | varchar(30) | YES  |     | NULL    |       |
+| SCODE    | varchar(30) | YES  |     | NULL    |       |
+| FLATNO   | varchar(20) | YES  |     | NULL    |       |
+| EMAIL    | varchar(60) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
