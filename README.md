@@ -37,7 +37,7 @@ The platform is built with **[ Java, Spring MVC, MySQL, JSP]** and is designed t
 2. **Configure the database:**
    - Create a MySQL database named syncous
    - Create 5 tables namely announcement, community, complaints, maintainance, userdetails 
-   - for schema of tables refer file 
+   - for schema of tables refer file **schema_of_tables.txt**
    - Set Mysql credentials as follows
    - String dbUser = "root";
    - String dbpass = "root@123";
